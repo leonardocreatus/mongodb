@@ -14,6 +14,7 @@ RUN \
   apt-get update && \
   apt-get install -y mongodb-org && \
   rm -rf /var/lib/apt/lists/*
+  mkdir /data/db
 
 # Define mountable directories.
 VOLUME ["/data/db"]
